@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background:
+        linear-gradient(217deg, rgba(2, 20, 82, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(69, 112, 119, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(12, 12, 145, 0.466), rgba(0, 0, 255, 0) 70.71%);
+    background-attachment: fixed;
+}
+
+
+main{ /*Container de fora*/
+    position: relative;
+    height: 100vh;
+    position: relative;
+}
+
+section#celular{  /*Container de dentro*/
+    position: absolute; /*A partir do momento que se faz o posicionamento absoluto eu consigo posicionar em: */
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /*-metade pra esquerda, e menos metade para cima*/
+    height: 627px;
+    width: 310px;
+    background: url('../pacote-d013/pacote-d013/imagens/frame-iphone.png') no-repeat; /*.. para voltar uma pasta*/
+}
